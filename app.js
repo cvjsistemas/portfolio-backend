@@ -91,6 +91,10 @@ transporter.sendMail(options, (err, resp) => {
 
 });
 
+app.get('/prueba',(req,res)=>{
+  res.send('probando el backend');
+})
+
 app.listen(PORT, (req, res) => {
   console.log(`Server Connected in PORT ${PORT}`);
 });
